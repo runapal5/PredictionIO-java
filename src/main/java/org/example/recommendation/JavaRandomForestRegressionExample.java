@@ -24,7 +24,7 @@ public class JavaRandomForestRegressionExample {
 		    SparkConf sparkConf = new SparkConf().setAppName("JavaRandomForestRegressionExample").setMaster("local[2]").set("spark.executor.memory","1g");
 			JavaSparkContext jsc = new JavaSparkContext(sparkConf);
 		    // Load and parse the data file.
-		    String datapath = "C:/predictio-jars/data/mllib/sample_libsvm_data.txt";
+		    String datapath = "/quickstartapp/randomforest/data/mllib/sample_libsvm_data.txt";
 		    System.out.println("****************1***********************");
 		    try{
 		    	//MLUtils.loadLibSVMFile(jsc.sc(), datapath);
