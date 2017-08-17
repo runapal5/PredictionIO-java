@@ -64,14 +64,16 @@ public class JavaRandomForestRegressionExample {
 		    }).mean();
 		    System.out.println("Test Mean Squared Error: " + testMSE);
 		    System.out.println("Learned regression forest model:\n" + model.toDebugString());
-
+		    System.out.println("***************************************************************");
+         	    jsc.stop();
+		 
 		    // Save and load model
 		    /*
 		    model.save(jsc.sc(), "target/tmp/myRandomForestRegressionModel");
 		    RandomForestModel sameModel = RandomForestModel.load(jsc.sc(),
 		      "target/tmp/myRandomForestRegressionModel");
+		    jsc.stop();  
 		    // $example off$
                    */
-		    jsc.stop();
 		  }
 }
