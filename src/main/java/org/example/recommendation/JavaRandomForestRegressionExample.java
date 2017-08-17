@@ -66,11 +66,12 @@ public class JavaRandomForestRegressionExample {
 		    System.out.println("Learned regression forest model:\n" + model.toDebugString());
 
 		    // Save and load model
+		    /*
 		    model.save(jsc.sc(), "target/tmp/myRandomForestRegressionModel");
 		    RandomForestModel sameModel = RandomForestModel.load(jsc.sc(),
 		      "target/tmp/myRandomForestRegressionModel");
 		    // $example off$
-
+                   */
 		    jsc.stop();
 		  }
 }
